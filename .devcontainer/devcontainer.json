@@ -1,0 +1,23 @@
+{
+	"name": "Nvidia OpenCL",
+	"dockerFile": "nvidia/Dockerfile",
+	"runArgs": [
+		// "--cap-add=SYS_PTRACE", 
+		// "--security-opt", 
+		// "seccomp=unconfined",
+		"--gpus=all",
+		"--runtime=nvidia"
+	],
+	// "settings": { 
+	// 	"terminal.integrated.shell.linux": "/bin/bash"
+	// },
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"MS-CEINTL.vscode-language-pack-pl",
+				"ms-vscode.cpptools-extension-pack",
+				"galarius.vscode-opencl"
+			]
+		}
+	}
+}
