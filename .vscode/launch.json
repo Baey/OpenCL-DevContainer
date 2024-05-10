@@ -2,13 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Main",
+            "name": "Launch PlatformCheck",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/main.out",
+            "program": "${workspaceFolder}/PlatformCheck/main.out",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/PlatformCheck",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -19,7 +19,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Build Main"
+            "preLaunchTask": "Build PlatformCheck"
         }
     ]
 }

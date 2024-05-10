@@ -16,7 +16,8 @@
 			"extensions": [
 				"MS-CEINTL.vscode-language-pack-pl",
 				"ms-vscode.cpptools-extension-pack",
-				"galarius.vscode-opencl"
+				"galarius.vscode-opencl",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}

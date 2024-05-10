@@ -2,7 +2,7 @@
 #define CL_TARGET_OPENCL_VERSION 300
 
 #include <iostream>
-#include <CL/cl.hpp>
+#include <CL/opencl.hpp>
 
 int main(int, char**){
     std::vector<cl::Platform> platforms;

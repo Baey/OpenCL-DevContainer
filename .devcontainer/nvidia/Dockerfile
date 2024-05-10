@@ -1,7 +1,7 @@
 FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
-    && apt-get -y install iproute2 procps lsb-release \
+    && apt-get -y install iproute2 procps lsb-release git\
     && apt-get -y install build-essential cmake cppcheck clinfo valgrind ocl-icd-opencl-dev pocl-opencl-icd opencl-headers
 
 RUN mkdir -p /etc/OpenCL/vendors && \
