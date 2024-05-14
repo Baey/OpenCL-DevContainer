@@ -45,5 +45,5 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "cmake.sourceDirectory": "/workspaces/opencl-vscode-env/PlatformCheck"
+    "cmake.sourceDirectory": "/home/blazej/Desktop/opencl-vscode-env/PlatformCheck"
 }
