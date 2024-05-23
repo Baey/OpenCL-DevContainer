@@ -1,3 +1,0 @@
-/workspaces/OpenCL-Devcontainer/Samples/Recompile/CMakeFiles/SobelFilterImage.dir
-/workspaces/OpenCL-Devcontainer/Samples/Recompile/CMakeFiles/edit_cache.dir
-/workspaces/OpenCL-Devcontainer/Samples/Recompile/CMakeFiles/rebuild_cache.dir
