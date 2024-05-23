@@ -6,7 +6,12 @@
 		// "--security-opt", 
 		// "seccomp=unconfined",
 		"--gpus=all",
-		"--runtime=nvidia"
+		"--runtime=nvidia",
+		"--device=/dev/nvidia0:/dev/nvidia0",
+		"--device=/dev/nvidia-modeset:/dev/nvidia-modeset",
+		"--device=/dev/nvidia-uvm:/dev/nvidia-uvm",
+		"--device=/dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools",
+		"--device=/dev/nvidiactl:/dev/nvinvidiactl"
 	],
 	// "settings": { 
 	// 	"terminal.integrated.shell.linux": "/bin/bash"
