@@ -1,0 +1,615 @@
+<html xmlns:comem3="xalan://com.em3" xmlns:em3="http://www.em3.com/2002/widget">
+
+
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>NVIDIA GPU Computing Documentation</title>
+	<link type="image/x-icon" href="images/NVSphere.ico" rel="shortcut icon">
+	<script type="text/javascript">
+	<!--
+	function openScreenshot(url)
+	{
+	  var dlgWidth = 556;
+ 	  var dlgHeight = 634;
+	  var dlgLeft = (screen.width - dlgWidth) / 2;
+	  var dlgTop = (screen.height - dlgHeight) / 2;
+
+ 	  var specs = 'toolbar=no,scrollbars=no,location=no,status=no,menubar=no,resizable=no,width=550,height=610,left=' + dlgLeft + ',top=' + dlgTop;
+
+	  newwin = window.open(url, 'ScreenshotWindow', specs);
+	  newwin.focus();
+	}
+	function pageSelectorGoTo()
+	{
+	  window.location = document.forms[1].pageSelector.value
+	}
+	-->
+	</script>
+<style type="text/css">
+body {
+margin-left:0px;
+margin-top:0px;
+font-family:Verdana, Geneva, Arial, Helvetica, Sans Serif;
+font-size: 11px;
+}
+
+td, div { 
+font-family:Verdana, Geneva, Arial, Helvetica, Sans Serif;
+font-size: 11px;
+}
+
+#devTable {
+position:absolute;
+top:0px;
+}
+
+.devGradient {
+vertical-align:top;
+padding:10px;
+
+}
+
+A { 
+text-decoration:none;
+/* color: #008000; */
+/* green color: #76b900; */
+/*font-weight:bold; */
+color: #5B8C00;
+}
+
+A:hover { 
+text-decoration:underline;
+color: #000000;
+}
+
+A:visited { 
+color: #5B8C00;
+}
+
+.bucketText { 
+font-size: 10px;
+}
+A.bucketHeader { 
+font-weight:bold;
+color: #009900;
+text-decoration:none;
+}
+A.bucketHeader:hover { 
+text-decoration:underline;
+}
+A.bucketHeader:visited { 
+color: #005000;
+}
+H1 { 
+font-size:15px;
+color: #000000;
+font-weight:bold;
+}
+H2 { 
+font-size:14px;
+color: #000000;
+font-weight:bold;
+}
+H3 { 
+font-size:14px;
+color: #000080;
+font-weight:bold;
+}
+H4 { 
+font-size:12px;
+color: #000000;
+font-weight:bold;
+}
+H5 { 
+font-size:12px;
+color: #000080;
+font-weight:bold;
+}
+H6 { 
+font-size:10px;
+color: #000000;
+font-weight:bold;
+}
+H6 { 
+font-size:10px;
+color: #000080;
+font-weight:bold;
+}
+
+.search {
+font-size:7pt; 
+color: #FFFFFF;
+} 
+.searchResultsHeader { 
+font-size:10pt;
+font-weight:bold;
+color: #000080;
+}
+.smallText { 
+font-size: 11px;
+}
+.legal{
+font-size:7pt; 
+color: #000000;
+} 
+A.legal{
+text-decoration:none
+color: #000000;
+} 
+A.legal:hover{
+text-decoration:underline
+color: #000000;
+} 
+A.legal:visited{
+color: #000000;
+} 
+
+#mytable 
+{
+BORDER-COLLAPSE: collapse;
+borderColor: #dfdfe7;
+cellSpacing: 0;
+cellPadding: 6;
+borderColorLight: #e9eaed;
+border: 1;
+}
+
+#mytable td {
+FONT-SIZE: 10px; 
+FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, 'Sans Serif';
+borderColor: #dfdfe7;
+background-color: #F4F4F7;
+border-right: 1px solid #dfdfe7;
+border-bottom: 1px solid #dfdfe7;
+padding: 6px 6px 6px 12px; 
+}
+
+#mytable th {
+padding: 6px 6px 6px 12px; 
+FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, 'Sans Serif';
+FONT-WEIGHT: 400; 
+FONT-SIZE: 10px;
+borderColor: #c0c0c0;
+bgColor: #dfdfe7
+}
+.itemName
+{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+td.verticalBder
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-right: 1px solid #aca899
+}
+.anchorImage
+{
+    border: none;
+}
+.itemMinspec
+{
+    border: none;   
+}
+td.itemMinspec
+{
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    vertical-align: middle;
+}
+td.screenshot
+{
+    width: 134px;
+    height: 134px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    padding-left: 0px;
+}
+td.colInfo
+{
+    padding-top: 1px;
+    padding-left: 5px;
+}
+.featuredMonth
+{
+    padding-bottom: 5px;
+    padding-top: 5px;    
+    padding-left: 5px;    
+    background-color: #dfdfe7;
+    color: black;
+    border: solid 1px #d3dae4;
+    font-weight: bold;
+    font-size: 14px;
+}
+.itemGroup
+{
+    font-weight: bold;
+}
+.itemImage
+{
+    border: 2px solid #008000;
+}
+.itemImageNoLink
+{
+    border: 2px solid white;
+}
+.description
+{
+    font-size: 10px;
+}
+.links
+{	
+    font-size: 10px;
+}
+.changeNotification
+{
+    font-size: 9px;
+}
+</style>
+</head>
+
+
+<body>
+<table style="background-color:#ffffff;border-color:#cccccc;border-style:solid;border-top-width:1px;border-left-width:1px;border-right-width:1px;border-bottom-width:1px;" cellspacing="0" cellpadding="0" border="0" width="591" align="center">
+<tr>
+<td valign="top">
+<div style="position:relative;left:13px;top:8px;padding-bottom:20px;width:565px;">
+
+		<!-- 
+		******************
+		      MAIN 
+		******************  
+		-->
+		
+		<h2>NVIDIA GPU Computing Documentation</h2>
+
+
+		<p>The GPU Computing SDK includes 100+ code samples, utilities, whitepapers, and additional documentation to help you get started developing, porting, and optimizing your applications for the CUDA architecture.  You can get quick access to many of the SDK resources on this page, or <a href="http://developer.nvidia.com/object/gpucomputing.html">download the complete SDK.</a><br/>
+		<br/>Please note that you may need to install the latest NVIDIA drivers and CUDA Toolkit to compile and run the code samples.<br/>
+		<ul>
+		<li><a href="http://www.nvidia.com/drivers">NVIDIA Driver Downloads</a></li>
+		<li><a href="http://www.nvidia.com/getcuda">Complete GPU Computing SDK</a></li>
+		</ul>
+
+		</p>
+		<p>The latest GPU Computing SDK and required toolkits are available <a href="http://developer.nvidia.com/object/gpucomputing.html">here</a>.</p>
+              
+		<table width="575" border="0">
+
+		<!-- generated html start -->
+			<tr>
+			  <td colspan="3" class="separator"><a id="release"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA Getting Started Guide (Windows)&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This guide will show you how to install and check the correct operation of the CUDA development tools in Windows.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/release/Getting_Started_Windows.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="release"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA Getting Started Guide (Linux)&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This guide will show you how to install and check the correct operation of the CUDA development tools in Linux.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/release/Getting_Started_Linux.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="release"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA Getting Started Guide (Mac OS X)&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This guide will show you how to install and check the correct operation of the CUDA development tools in Mac OS X.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/release/Getting_Started_Mac.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="$Anchor"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA C SDK Release Notes&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">CUDA C SDK Release Notes.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/CUDA_SDK_Release_Notes.txt" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="doc"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA C Programming Guide&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This is a detailed programming guide for CUDA C developers.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="C/doc/CUDA_C_Programming_Guide.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="doc"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA C Best Practices Guide&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This is a manual to help developers obtain the best performance from the NVIDIA CUDA Architecture.  It presents established optimization techniques and explains coding metaphors and idioms that can greatly simplify progarmming for the CUDA architecture.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="C/doc/CUDA_C_Best_Practices_Guide.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="release"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA Developer Guide for Optimus Platforms&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This document provides guidance to CUDA developers and explains how NVIDIA CUDA APIs can be used to query for GPU capabilities in Optimus systems. It is strongly recommended to follow these guidelines to ensure CUDA applications are compatible with all notebooks featuring Optimus.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/release/CUDA_Developer_Guide_for_Optimus_Platforms.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="release"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA Fermi Compatibility Guide&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">The Fermi Compatibility Guide for CUDA Applications is intended to help developers ensure that their NVIDIA CUDA applications will run effectively on GPUs based on the NVIDIA Fermi Architecture. This document provides guidance to developers who are already familiar with programming in CUDA C/C++ and want to make sure that their software applications are compatible with Fermi.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/release/Fermi_Compatibility_Guide.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="release"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">CUDA Fermi Tuning Guide&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">An overview on how to tune applications for Fermi to further increase these speedups is provided. More details are available in the CUDA C Programming Guide (version 3.2 and later) as noted throughout the document..</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/release/Fermi_Tuning_Guide.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="$Anchor"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">DirectCompute SDK Release Notes&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">DirectCompute SDK Release Notes.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/DirectCompute_Release_Notes.txt" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="doc"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">DirectCompute Programming Guide&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This is a detailed programming guide for DirectCompute developers.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="DirectCompute/doc/DirectCompute_Programming_Guide.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="$Anchor"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">OpenCL SDK Release Notes&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">OpenCL SDK Release Notes.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/OpenCL_Release_Notes.txt" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="doc"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">OpenCL Overview for the CUDA Architecture&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This whitepaper summarizes the guidelines for how to choose the best implementations for NVIDIA GPUs.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="OpenCL/doc/OpenCL_Programming_Overview.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="doc"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">OpenCL Programming Guide&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This is a detailed programming guide for OpenCL developers.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="OpenCL/doc/OpenCL_Programming_Guide.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="doc"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">OpenCL Best Practices Guide&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This is a manual to help developers obtain the best performance from OpenCL.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="OpenCL/doc/OpenCL_Best_Practices_Guide.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>			<tr>
+			  <td colspan="3" class="separator"><a id="release"><hr /></a></td>
+			</tr>
+			<tr>
+			  <td width="71%" rowspan ="1" align="left" valign="top" class="title"><span class="itemName" name="path">GPU Computing SDK End User License Agreement&nbsp;</span><br/>
+			  <br/>
+			  <span class="description">This is the Software License Agreement for developers or licensees.</span></td>
+  			  <td rowspan ="1" width="5" align="left" valign="top" class="verticalBder">&nbsp;</td>
+			  <td rowspan ="1" align="right" valign="top" class="itemMinspec">
+			  <p><span class="links">
+			  <br />
+                          <br />
+			  <br />
+			  <a href="doc/release/License.pdf" name="path">Open</a><br />
+			  </p>
+			  </td>
+			</tr>
+			<tr>
+			  <td align="right" valign="top" >
+			  </td>
+			</tr>
+		<!-- generated html end -->
+
+		</table>
+
+</div>
+<div align="right" style=" color:#999999;">Last Update: 2/5/2011</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
