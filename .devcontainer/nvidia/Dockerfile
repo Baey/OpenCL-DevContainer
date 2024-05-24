@@ -14,8 +14,7 @@ RUN apt-get update && apt-get install -y \
     iproute2 \
     procps \
     git \
-    cmake \
-    cppcheck
+    cmake 
 
 # Instalacja bibliotek OpenCL i LLVM
 RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
@@ -23,6 +22,11 @@ RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
     && apt-get update
     
 RUN apt-get install -y \
+    libglu1-mesa-dev \
+    libgl1-mesa-dev \
+    libx11-dev \
+    libxmu-dev \
+    freeglut3-dev \
     ocl-icd-libopencl1\
     libclang-17-dev \
     clang-17\
