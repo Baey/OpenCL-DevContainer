@@ -3,6 +3,8 @@ FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+FROM ubuntu:24.04
+
 # Instalacja podstawowych narzędzi i zależności
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -19,9 +21,9 @@ RUN apt-get update && apt-get install -y \
     cmake 
 
 # Instalacja bibliotek OpenCL i LLVM
-RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
-    && add-apt-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-17 main" \
-    && apt-get update
+# RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
+#     && add-apt-repository "deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-17 main" \
+#     && apt-get update
     
 RUN apt-get install -y \
     python3-dev \
