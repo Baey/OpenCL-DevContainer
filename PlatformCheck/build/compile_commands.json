@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/OpenCL-Devcontainer/PlatformCheck/build",
+  "command": "/usr/bin/clang++-17 -g -o CMakeFiles/PlatformCheck.dir/main.cpp.o -c /workspaces/OpenCL-Devcontainer/PlatformCheck/main.cpp",
+  "file": "/workspaces/OpenCL-Devcontainer/PlatformCheck/main.cpp"
+}
+]

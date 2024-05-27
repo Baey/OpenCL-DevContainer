@@ -1,0 +1,90 @@
+./oclMedianFilter Starting (Using MedianFilter.cl)...
+
+  Right Click on Mouse for Menu
+
+  or
+
+  Press:
+
+   <spacebar> to toggle Filter On/Off
+
+   'F' key to toggle between FullScreen and Windowed
+
+   'P' key to toggle Processing between GPU and CPU
+
+   <esc> to Quit
+
+
+Image File	 = ../../../src/oclMedianFilter/data/SierrasRGB.ppm
+Image Dimensions = 1920 w x 1080 h x 32 bpp
+
+Calling InitGL...
+
+Get Platform ID... NVIDIA CUDA
+
+Get Device Info...
+  Using 1 Selected Device for Median Filter Computation...
+
+clCreateContext...
+
+clCreateCommandQueue...
+  CommandQueue 0, Device 0, Device Load Proportion = 1.00, NVIDIA GeForce RTX 4090
+
+clCreateBuffer (Input and Output Pinned Host buffers)...
+clEnqueueMapBuffer (Pointer to Input and Output pinned host buffers)...
+Load Input Image to Input pinned host buffer...
+Load OpenCL Prog Source from File...
+clCreateProgramWithSource...
+clBuildProgram...
+
+clCreateKernel (ckMedian), Device 0...
+Image Height (rows) for Device 0 = 1080...
+clCreateBuffer (Input and Output GMEM buffers, Device 0)...
+clSetKernelArg (0-4), Device 0...
+
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+OpenCL GPU RGB Median Filter ON | W: 1920 , H: 1080
+
+Median Filter Toggled OFF...
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+
+Host C++ CPU Processing...
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080
+RGB Median Filter OFF | W: 1920 , H: 1080

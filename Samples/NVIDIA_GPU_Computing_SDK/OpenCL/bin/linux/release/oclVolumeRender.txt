@@ -1,0 +1,18 @@
+./oclVolumeRender Starting...
+
+Press <f> to toggle filtering ON/OFF
+       '-' and '+' to change density (0.01 increments)
+       ']' and '[' to change brightness
+       ';' and ''' to modify transfer function offset
+       '.' and ',' to modify transfer function scale
+
+Using CL-GL Interop...
+
+ !!! Error # -1000 (Unspecified Error) at line 621 , in file oclVolumeRender.cpp !!!
+
+
+Starting Cleanup...
+
+./oclVolumeRender Exiting...
+Press <Enter> to Quit
+-----------------------------------------------------------

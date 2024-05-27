@@ -1,0 +1,88 @@
+./oclSortingNetworks Starting...
+
+Initializing data...
+Initializing OpenCL...
+Initializing OpenCL bitonic sorter...
+...loading BitonicSort.cl
+...creating bitonic sort program
+...building bitonic sort program
+...creating bitonic sort kernels
+...checking minimum supported workgroup size
+Creating OpenCL memory objects...
+
+Test array length 64 (16384 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 128 (8192 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 256 (4096 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 512 (2048 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 1024 (1024 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 2048 (512 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 4096 (256 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 8192 (128 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 16384 (64 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 32768 (32 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 65536 (16 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 131072 (8 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 262144 (4 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 524288 (2 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Test array length 1048576 (1 arrays in the batch)...
+...validating sorted keys: OK
+...validating sorted values array: OK
+...stability property: NOT stable !!!
+
+Shutting down...

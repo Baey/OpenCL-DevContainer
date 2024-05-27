@@ -1,6 +1,8 @@
 # Bazowy obraz z NVIDIA CUDA
 FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Instalacja podstawowych narzędzi i zależności
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -22,6 +24,8 @@ RUN wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add - \
     && apt-get update
     
 RUN apt-get install -y \
+    python3-dev \
+    libpython3-dev \
     libglu1-mesa-dev \
     libgl1-mesa-dev \
     libx11-dev \
@@ -40,6 +44,7 @@ RUN apt-get install -y \
     zlib1g-dev \
     dialog \
     libxml2-dev \
+    libsdl2-dev \
     libclang-cpp17-dev \
     libclang-cpp17 \
     llvm-17-dev \
@@ -83,6 +88,13 @@ ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
 
 # Ustawienie zmiennych środowiskowych Intel oneAPI
 RUN echo "source /opt/intel/oneapi/setvars.sh" >> ~/.bashrc
+
+# Sterowniki PoCL dla CUDA
+RUN wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh -O /tmp/Mambaforge.sh && \
+    bash /tmp/Mambaforge.sh -b -p /opt/conda && \
+    rm /tmp/Mambaforge.sh
+ENV PATH /opt/conda/bin:$PATH
+RUN mamba install -y pocl
 
 # Komenda startowa
 CMD ["clinfo"]

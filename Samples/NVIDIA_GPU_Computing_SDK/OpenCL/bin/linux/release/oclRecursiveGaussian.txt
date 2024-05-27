@@ -1,0 +1,92 @@
+./oclRecursiveGaussian Starting (using RecursiveGaussian.cl)...
+
+  <Right Click Mouse Button> for Menu
+  or
+  Press:
+
+  <-/=> change Sigma (-/+ 0.1)
+  <_/+> change Sigma (-/+ 1.0)
+  <0,1,2> keys to set Order
+  <spacebar> to toggle Filter On/Off
+  <F> key to toggle FullScreen On/Off
+  <P> key to toggle Processing between GPU and CPU
+  <ESC> to Quit
+
+Image Width = 1920, Height = 1080, bpp = 32
+
+Allocate Host Image Buffers...
+Calling InitGL...
+clGetPlatformID...
+Get the Device info and select Device...
+ # of Devices Available = 1
+ Using Device 0: NVIDIA GeForce RTX 4090
+ # of Compute Units = 128
+
+clCreateContext...
+
+clCreateCommandQueue...
+
+clCreateBuffer (Input, Intermediate and Output buffers, device GMEM)...
+oclLoadProgSource...
+clCreateProgramWithSource...
+clBuildProgram...
+clCreateKernel (Rows, Columns, Transpose)...
+
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+OpenCL GPU Recursive Gaussian | W: 1920  H: 1080 | Full Filter, Order 0, Sigma 10.0
+
+Recursive Gaussian Filter Toggled OFF...
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+Recursive Gaussian OFF | W: 1920  H: 1080
+
+Starting Cleanup...
+
+./oclRecursiveGaussian Exiting...
+-----------------------------------------------------------
