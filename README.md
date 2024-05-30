@@ -1,13 +1,11 @@
 # Konetener deweloperski OpenCL
 
-----
 - [Instalacja](#instalacja)
   - [Linux](#linux)
   - [Windows (WSL)](#windows)
   
-
-----
 ## Instalacja
+
 Działanie kontenera zostało zweryfikowane dla systemów operacyjnych Linux oraz Windows. Niemniej jednak, istnieje wersja Docker na system operacyjny MacOS, w związku opisywany kontener powinien także działać na urządzeniach Apple. Poniżej opsiano proces instalacji niezbędnych narzędzi potrzebnych do uruchomienia kontenera na Ubuntu oraz Windows.
 
 ### Linux
@@ -102,4 +100,12 @@ Warto zwrócić uwagę, że WSL 2 jest dostępny na systemach Windows 11 64-bit 
      ```
 3. Pobierz aplikację [Docker Desktop na system Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe).
 4. Zainstaluj aplikację upewniając się, że opcja **Use WSL 2 instead of Hyper-V** jest zaznaczona.
+
+## Uruchamianie kontenera
+Do uruchamiania kontenera deweloperskiego zalecany jest program Visual Studio Code, jednakże inne nardzędzia takie jak np. CLion także wspierają funkcję devcontainer, w związku z tym sposób uruchamiania oraz działania kontenera powininen być zbliżony. Poniżej zostaną opisane kroki potrzebne do uruchomienia kontenera w VSC.
+1. Zainstaluj rozszerzenie [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+2. Otwórz repozytorium w kontenerze.
+   ![Zrzut ekranu 2024-05-30 110506](https://github.com/Baey/OpenCL-Devcontainer/assets/17512836/f33d7997-dd7c-47ab-8cd9-9cbca8855025)
+Od tego momentu program Visual Studio Code będzie połączony z uruchomionym kontenerem. Widoczne pliki oraz okna terminalu znajdują się bezpośrednio w kontenerze.
+
 
