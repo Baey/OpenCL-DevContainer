@@ -103,8 +103,9 @@ Warto zwrócić uwagę, że WSL 2 jest dostępny na systemach Windows 11 64-bit 
 
 ## Uruchamianie kontenera
 Do uruchamiania kontenera deweloperskiego zalecany jest program Visual Studio Code, jednakże inne nardzędzia takie jak np. CLion także wspierają funkcję devcontainer, w związku z tym sposób uruchamiania oraz działania kontenera powininen być zbliżony. Poniżej zostaną opisane kroki potrzebne do uruchomienia kontenera w VSC.
-1. Zainstaluj rozszerzenie [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
-2. Otwórz repozytorium w kontenerze.
+1. Sklonuj to repozytorium [https://github.com/Baey/OpenCL-DevContainer.git](https://github.com/Baey/OpenCL-DevContainer.git)
+2. Otwórz VSC w repozytorium i zainstaluj rozszerzenie [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+3. Otwórz repozytorium w kontenerze.
    ![Zrzut ekranu 2024-05-30 110506](https://github.com/Baey/OpenCL-Devcontainer/assets/17512836/f33d7997-dd7c-47ab-8cd9-9cbca8855025)
 Od tego momentu program Visual Studio Code będzie połączony z uruchomionym kontenerem. Widoczne pliki oraz okna terminalu znajdują się bezpośrednio w kontenerze.
 
