@@ -116,7 +116,7 @@ Od tego momentu program Visual Studio Code będzie połączony z uruchomionym ko
 
 W poniższej sekcji zawarto wskazówki dotyczące uruchamiania przykładowych aplikacji dostarczonych razem z niniejszym kontenerem. Podobnie jak miało to miejsce w poprzednich sekcjach, zalecanym środowiskiem programistycznym jest VSC dla którego zostały przedstawione poniższe instrukcje.
 
-# Intel oneAPI
+### Intel oneAPI
 1. Uruchom kontener - zostało to opisane [tutaj](#uruchamianie-kontenera).
 2. Kliknij na dodatek Intel oneAPI na lewym pasku z rozszerzeniami.
 3. Po otwarciu pojawi się zakładka z plikami dodatku. Kliknij w lupę i wyszukaj interesującą Cię aplikację.
