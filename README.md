@@ -127,4 +127,11 @@ W poniższej sekcji zawarto wskazówki dotyczące uruchamiania przykładowych ap
    ![Screenshot from 2024-06-03 14-53-48](https://github.com/Baey/OpenCL-DevContainer/assets/81320570/1601920c-fc79-4f22-b341-e9a7afdca2e0)\
 Gratulacje! Udało Ci się uruchomić przykładową aplikację Intel OneAPI.
 
+### Aplikacje zawarte w repozytorium
+1. Uruchom kontener - zostało to opisane [tutaj](#uruchamianie-kontenera).
+2. W terminalu wbudowanym w VSC przejść do folderu z wybraną aplikacją przykładową.
+    - dla aplikacji AMD ścieżka to **Samples/AMD SDK/<Nazwa_folderu_z_aplikacją>**
+    - dla aplikacji NVidii ścieżka to **Samples/NVIDIA_GPU_Computing_SDK/OpenCL/bin/linux/release**
+3. Uruchomić aplikację wpisując w terminal `./<Nazwa_aplikacji>`.
+
 
