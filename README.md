@@ -4,7 +4,7 @@
   - [Linux](#linux)
   - [Windows (WSL)](#windows)
 - [Uruchamianie kontenera](#uruchamianie-kontenera)
-- [Uruchamianie przykładowych aplikacji]("Uruchamianie-przykładowych-aplikacji)
+- [Uruchamianie przykładowych aplikacji](#uruchamianie-przykładowych-aplikacji)
   - [Intel oneAPI](#Intel-oneAPI)
   
 ## Instalacja
@@ -109,7 +109,7 @@ Do uruchamiania kontenera deweloperskiego zalecany jest program Visual Studio Co
 1. Sklonuj to repozytorium [https://github.com/Baey/OpenCL-DevContainer.git](https://github.com/Baey/OpenCL-DevContainer.git).
 2. Otwórz VSC w repozytorium i zainstaluj rozszerzenie [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 3. Otwórz repozytorium w kontenerze.
-   ![Zrzut ekranu 2024-05-30 110506](https://github.com/Baey/OpenCL-Devcontainer/assets/17512836/f33d7997-dd7c-47ab-8cd9-9cbca8855025)
+   ![Zrzut ekranu 2024-05-30 110506](https://github.com/Baey/OpenCL-Devcontainer/assets/17512836/f33d7997-dd7c-47ab-8cd9-9cbca8855025)\
 Od tego momentu program Visual Studio Code będzie połączony z uruchomionym kontenerem. Widoczne pliki oraz okna terminalu znajdują się bezpośrednio w kontenerze.
 
 ## Uruchamianie przykładowych aplikacji
@@ -124,7 +124,7 @@ W poniższej sekcji zawarto wskazówki dotyczące uruchamiania przykładowych ap
 5. Twoim oczom ukaże się pole wyboru ścieżki gdzie zostaną zapisane pliki aplikacji. Ustaw ją wedle preferencji i kliknij "Ok".
 6. Teraz powinno otworzyć się nowe okno VSC otwarte w folderze z plikami programu. Uwaga, kolejne kroki mogą różnić się w zależności od przykładu. W celu znalezienia więcej informacji odnoście uruchamiania czy też wymagań przykładu warto zajrzeć do pliku README projektu. Zazwyczaj jednak możliwe jest wsparcie się dodatkiem CMake - otwórz go w lewej zakładce.
 7. Zbuduj projekt za pomocą przycisku 1 oraz uruchom klikając w miejsce oznaczone na obrazku jako 2.
-   ![Screenshot from 2024-06-03 14-53-48](https://github.com/Baey/OpenCL-DevContainer/assets/81320570/1601920c-fc79-4f22-b341-e9a7afdca2e0)
+   ![Screenshot from 2024-06-03 14-53-48](https://github.com/Baey/OpenCL-DevContainer/assets/81320570/1601920c-fc79-4f22-b341-e9a7afdca2e0)\
 Gratulacje! Udało Ci się uruchomić przykładową aplikację Intel OneAPI.
 
 
