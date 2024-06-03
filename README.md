@@ -6,6 +6,7 @@
 - [Uruchamianie kontenera](#uruchamianie-kontenera)
 - [Uruchamianie przykładowych aplikacji](#uruchamianie-przykładowych-aplikacji)
   - [Intel oneAPI](#Intel-oneAPI)
+  - [Aplikacje zawarte w repozytorium](#aplikacje-zawarte-w-repozytorium)
   
 ## Instalacja
 
